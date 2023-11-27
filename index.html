@@ -13,8 +13,16 @@
 		<p>Merci de remplir le formulaire pour suivre ce cours.</p>
 		<form action="inscription.html" method="POST">
 			<!--TODO 1: Ajout du champ Nom-->
+			<div class="form-group">
+				<label for="nom">Nom :</label>
+				<input type="text" id="nom" name="nom" required>
+			</div>
 			<!--TODO 2: Ajout du champ Prénom-->
-			<!--TODO 3: Ajout du champ Login-->
+			<div class="form-group">
+				<label for="prenom">Prénom :</label>
+				<input type="text" id="prenom" name="prenom" required>
+			</div>
+		<!--TODO 3: Ajout du champ Login-->
 			<div class="form-group">
 				<label for="login">Login :</label>
 				<input type="text" id="login" name="login" required>
@@ -24,10 +32,15 @@
 				<label for="email">Email :</label>
 				<input type="email" id="email" name="email" required>
 			</div>
-			<!--TODO 5: Ajout du champ Mot de passe-->
-			<!--TODO 6: Ajout du bouton de soumission-->
+		<!--TODO 5: Ajout du champ Mot de passe-->
+			<div class="form-group">
+				<label for="password">Mot de passe :</label>
+				<input type="password" id="password" name="password" required>
+			</div>
+		<!--TODO 6: Ajout du bouton de soumission-->
+			<button type="submit" name="inscriptionForm">S'inscrire</button>
 		</form>
-	</div>
-	</body>
-	</html>
-<!--Fin structure HTML-->
+		</div>
+		</body>
+		</html>
+	<!--Fin structure HTML-->
